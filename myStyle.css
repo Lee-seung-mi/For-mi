@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#menu2on{
+    font-weight: bold;
+}
+
+.thumbnailRow{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail{
+    position: relative;
+    width: 343px;
+    height: 343px;
+    background-color: white;
+    display: inline-block;
+    margin: 10px;
+}
+
+.img{
+    position: absolute;
+    width: 343px;
+    height: 343px;
+}
+
+.imageTag{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: luminosity;
+}
+
+.imageTag.on{
+    mix-blend-mode: normal;
+}
+
+.textField{
+    position: absolute;
+    width: 343px;
+    height: 343px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.0);
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    transition-property: color, background-color;
+    transition-duration: 200ms;
+}
+
+.textField.on{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#topBar{
+    width: 100%; 
+    height: 80px; 
+    background: #000;
+}
+
+#header{
+    width: 1060px; 
+    margin:0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 91px;
+    float: left;
+    margin-top: 5px;
+}
+
+#menuBar{
+    width: 500px;
+    float: right;
+    margin-top: 10px;
+}
+
+.menu{
+    display: flex; 
+    justify-content: space-around;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+	font-style: normal
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    text-align: center;
+}
+
+ul, li {
+    list-style: none;
+}
+header {
+    width: 100%;
+    min-width: 1060px;
+    height: 80px;
+    color: #fff;
+    background: #000000;
+}
+
+#colorpalettetitle{
+    background-color: white;
+    height: 70px;
+    line-height: 70px;
+    font-size: 21px;
+    font-family: 'Bodoni Moda', serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+header .logo {
+    float: left;
+}
+header .logo img {
+    height: 60px;
+}
+header .menu {
+    float: right;
+}
+header .menu li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+header .menu li:first-child {
+    margin-left: 0;
+}
+
+#slider{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#slider2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#colorbox{
+    display: inline-block;
+    margin-top: 70px;
+}
+
+#imageContainer{
+    width: 1060px;
+    height: 650px;
+    display: flex;
+    overflow: hidden;
+}
+
+.posterset{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#title{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+#info{
+    font-family: 'Roboto', sans-serif;
+}
+
+#photobox{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#leftphoto{
+    margin-top: -90px;
+    margin-left: -470px;
+}
+
+#rightphoto{
+    margin-right: -470px;
+    margin-top: -90px;
+}
+
+#topic{
+    font-family: 'Noto Serif KR', serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #5c4f3a
+}
+
+.contactbox{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+
+}
+
+#imageContainer2{
+    width: 1060px;
+    height: 363px;
+}
+
+#imageSlider{
+    width: 1060px;
+    display: flex;
+    transition: transform 0.5s;
+    margin-top:70px;
+}
+
+#imageSlider2{
+    width: 1060px;
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-between;
+}
+
+#interface{
+    width: 1080px;
+    height: 620px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#leftArrow{
+    position: absolute;
+    left: 20px;
+    top: 350px;
+}
+
+#rightArrow{
+    position: absolute;
+    right: 20px;
+    top: 350px;
+    transform: scaleX(-1);
+}
+
+#bottomBtn{
+    display: flex;
+    margin-bottom: 0px;
+    width: 130px;
+    height: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottomBtn button{
+    padding: 5px 5px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius:0.5em;
+}
+
+#bottomBtn button:hover{
+    background-color: white;
+}
+
+footer{
+    background: rgb(0, 0, 0);
+    color: #fff;
+    position: relative;
+    height: auto;
+    min-height: 100%;
+    transform: translateY(90%);
+    justify-content: center;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+	font-style: normal
+}
+
+#footertext{
+    display: inline-block;
+    height: 100px;
+    line-height: normal;
+}
